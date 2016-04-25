@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+    .navagationbar .x700{display:block;}
+
+	article {
+		width: 850px;
+		height: 200px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 0;
+	}
+
+	#main_nav{
+		z-index: 10;
+		font-size: small;
+	}
+	
+	#main_nav ul{
+		background: #41924B;
+		float: left;
+		-webkit-transition: .5s;
+		transition: .5s;
+		padding-left: 1500px;
+		margin-left: -1500px;
+		position: relative;
+		text-align: center;
+		padding-right: 25px;
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+	
+	#main_nav li {
+		float: left;
+		position: relative;
+		list-style: none;
+		width:180px; 
+		-webkit-transition: .5s;
+		transition: .5s;
+		margin-left: auto;
+		margin-right: auto;
+	}
+			
+	#main_nav a {
+		display: block;
+		text-decoration: none;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		color: #323232;
+	}
+	
+	#main_nav ul ul {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		visibility: hidden;
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+		border-style: none;
+	}
+	
+	#main_nav li a:hover{
+		background: #87E293;
+		color: black;
+	}
+	
+	#main_nav li a:active{
+		background: #FE8402;
+		color:#FFFFFF;
+	
+	}
+	#main_nav li:hover, #main_nav li:hover li {
+		background: #41924B;
+	
+	}
+	
+	#main_nav li li:hover, #main_nav li li:hover li {
+		background: #F5F8DF;
+	}
+	
+	#main_nav li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+	z-index: auto;
+	}
+}
+

@@ -4,7 +4,7 @@
 
 body {
 	min-width:600px;
-	background: #6BCAE2;
+	background: #A4C1FF;
 	margin-left: 25px;
 	margin-right: 25px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
@@ -40,9 +40,9 @@ p a, footer a{
 	font-size: 50px;
 	margin: 50px auto;
 	cursor: pointer;
-	background-color: #3E53CB;
+	background-color: #12629B;
 	color: white;
-	border: 2px solid #3E53CB;
+	border: 2px solid #12629B;
 	clear: none;
 	border-radius: 10px;
 	min-width: 300px;
@@ -55,9 +55,8 @@ p a, footer a{
 }
 
 .button1:active {
-    background-color: #3E53CB; 
-    color: white;	
-	
+	background-color: #CAA6F5;
+	color: white;	
 }
 footer {
 	margin-top: 100px;
@@ -142,7 +141,7 @@ a {
 }
 
 #contact_details tr:nth-child(odd) > th{ 
-	background-color: #3E53CB
+	background-color: #4EABB8
 }
 
 
@@ -167,7 +166,6 @@ a {
 	padding: 25px;
 	float: left;
 }
-
 
 .float_left_text{
 	float: left;

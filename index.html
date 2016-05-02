@@ -1,58 +1,105 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Welcome Home</title>
- 
-<link href="mainstyle.css" rel="stylesheet" type="text/css">
-<link href="navbar.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" href="bro-logo.png" sizes="32x32" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
+    <title>Welcome Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles -->
+    <link href="mainstyle.css" rel="stylesheet">
+    <link href="table.css" rel="stylesheet">
 </head>
-<body>
-<article>
-<nav id="main_nav">
 
+  <body>  
+      
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <div class="container">
 
-<a href="index.html" id="logo"><img src="bro-logo.png" alt="BRO LOGO"/></a>
-<div class="navagationbar">
-	<div class="x700">
-        <ul>
-            
-            <li><a href="want_a_ticket.html">Want a ticket? &#9660;</a>
-                <ul>
-                    <li><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop" target="_blank" >Purchase Ticket &#10548;</a></li>
-                </ul>
-            </li> 
-            
-            <li><a href="become_a_patron.html">Become a Patron &#9660;</a>
-                <ul>
-                    <li><a href="classified_document.html">Classified Document</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="want_more_info.html">Want More Info? &#9660;</a>
-                <ul>
-                    <li><a href="hot_off_the_press.html">Hot Off the Press</a></li>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="big_logo" src="photos/bro-logo2.png"  alt="BRO Logo"/></a>
+              <a class="navbar-brand" href="#"><img class="small_logo" src="photos/bro-logo2-small.png"  alt="BRO Logo"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                <li><a href="want_a_ticket.html">Want a Ticket?</a></li>
+                <li><a href="become_a_patron.html">Become A Patron</a></li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Want more Info?<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="hot_off_the_press.html">Hot off the Press</a></li>
                     <li><a href="our_legacy.html">Our Legacy</a></li>
-                    <li><a href="honourary_members.html">Honourary Members</a></li>
-                    <li><a href="say_cheese.html">Say Cheese</a></li>
-                </ul>
-            </li> 
-            
-            <li><a href="contact_us.html">Contact Us </a></li> 
-                        
-        </ul>
-</div>
-</div>      
-</nav>
-</article>
-<h1>The Barrier Reef Orchestra Welcomes You</h1>
-<p>We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their great love of orchestral music and desire to provide North Queensland with quality performances.  </p>
+                    <li><a href="honorary_members.html">Honorary Members</a></li>
+                    <li><a href="say_cheese.html">Say Cheese <span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a></li>
+                  </ul>                  
+                </li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members Only<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="want_to_join.html">Want to Join?</a></li>
+                    <li><a href="staff_room.html">Staff Room</a></li>                    
+                    <li><a href="newletters.html">Newsleters</a></li>
+                    <li><a href="#">Rules and Regulations</a></li>
+                    <li><a href="#">Report </a></li>
+                  </ul>                  
+                </li>
+                
+              <li><a href="contact_us.html">Contact Us <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-<h2>Events:</h2>
+      </div>
+    </div>
 
-<table id="contact_details">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        
+        
+        <div class="item active">          
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Current Event:</h1>
+              <table id="contact_details">
 	<tr>
 		<th>Event:</th>
     	<td><a href="honourary_members.html"><h3>Bronwyn Douglass</h3></a></td>
@@ -72,18 +119,93 @@
     </tr>    
  
 </table>
+              <p><a class="btn btn-lg btn-primary" href="want_a_ticket.html" role="button">Want A Ticket?</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">        
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Become a Patron of the Orchestra</h1>
+              <p>Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra.</p>
+              <p><a class="btn btn-lg btn-primary" href="become_a_patron.html" role="button">Become a Patron Today!</a></p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Want to change your life forever?</h1>
+              <p>We are looking out for some new band members to join our Orchestra. Maybe this is just the break you were looking for!</p>
+              <p><a class="btn btn-lg btn-primary" href="want_to_join.html" role="button">Want to Join?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
 
-<a class="button1" href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop" target="_blank"> Want A Ticket?</a>
 
 
 
-<footer>
-<p>Sponsor:</p>
-<img src="logo2.gif" width="100" height="167" alt="tsv city logo"/> 
-<p>The Barrier Reef Orchestra | ABN: 73-365-249-138 | <a href="contact_us.html">Send us some nice mail</a> </p>
-</footer>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
+    <div class="container contact_us">
 
+      <!-- Two columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-7 col-md-7">
+          <h2>The Barrier Reef Orchestra - A North Queensland Icon </h2>
+          <p>The Barrier Reef Orchestra was formed in Townsville in 2000 after a workshop conducted by Richard McIntyre from Canberra. Over the past 15 years it has gone from strength to strength and now presents three main concerts a year, as well as smaller concerts such as the children’s concert Peter and the Wolf in 2014. We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their great love of orchestral music and desire to provide North Queensland with quality performances. Depending on the program up to 50 musicians play a wide ranging repertoire which has included some of the great orchestral compositions such as the New World Symphony by Dvorak and most of the Beethoven symphonies as well as Tchaikovsky and Bizet.</p>
+          <p><a href="our_legacy.html" class="btn btn-default" href="#" role="button">More Info &raquo;</a></p>
+          
+          <p>2016 is going to be a stellar year for your Orchestra. We have our three major concerts which will include opera, featuring Paul Tabone born in Ingham, but now working the international stage as a tenor based in Italy. Rachmaninov’s Piano Concerto No.2 featuring last year’s winner of the instrumental section of the ACVC, Arthur Athan. Our opening performance titled Dreams and Dances is sure to have some favourites such as Afternoon of a Fawn by Debussy. </p>
 
-</body>
+			<p>We are also pleased to be part of the Townsville 150 Concert where we will share the stage with the likes of David Campbell, Luke Kennedy, Bronwyn Douglas and the 1 RAR Band just to name a few of the guests. We will be back to Queens Gardens for a repeat performance as part of AFCM due to the huge popularity of last year’s concert.</p>
+
+<p><a href="hot_off_the_press.html" class="btn btn-lg btn-primary" href="#" role="button">Look at our Events &raquo;</a></p>
+        </div>
+        
+       <div class="col-lg-5 col-md-5">
+          	<div class="facebookfeed">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F%3Ffref%3Dts&tabs=timeline&width=300&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+		</div>
+        </div><!-- /.col-lg-4 -->
+
+     
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 , Barrier Reef Orchestra. - <a href="contact.html">Contact Us!</a> 
+      </footer>
+
+    </div><!-- /.container -->
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
 </html>

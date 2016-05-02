@@ -1,175 +1,207 @@
-@charset "utf-8";
-/* CSS Document */
-
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
 body {
-	min-width:600px;
-	background: #A4C1FF;
-	margin-left: 25px;
-	margin-right: 25px;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #35F580
 }
 
-
-
-a{
-	text-decoration:none
+/* PDF Links*/
+a[href $= '.pdf'] {
+	padding-right: 18px;
+	background: transparent url(photos/pdf_logo.png) no-repeat center right;
 }
-
-p a, footer a{
-	text-decoration: underline;
-}
-
-.Title {
-	margin-top: 20px;
-	padding-top: 125px;
-	text-align: center;
-	font-weight: bolder;
-	font-style: oblique;
-	text-decoration: underline;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+/* Facebook Feed*/
+.facebookfeed{
 	margin-left: auto;
 	margin-right: auto;
-	font-size: xx-large;
+	width: 320px;
+	height: 770px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #3E84E8;
+	}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Logos for nav menu */
+	
+
+	.small_logo{
+		margin-top:-15px;
+		margin-left:-60px; 	
+	}
+
+	.big_logo{
+	margin-top: -20px;
+	border-top: thick solid #C325F5;
+	border-right:medium solid #C325F5;
+	border-left:medium solid #C325F5;
+	border-bottom:thick dashed #C325F5;
+  }
+  
+  .big_logo:hover{
+	  border-top: thick solid #6547FF;
+	border-right:medium solid #6547FF;
+	border-left:medium solid  #6547FF;
+	border-bottom:thick dashed #6547FF}
+
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
 }
 
-.button1 {
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	font-size: 50px;
-	margin: 50px auto;
-	cursor: pointer;
-	background-color: #12629B;
-	color: white;
-	border: 2px solid #12629B;
-	clear: none;
-	border-radius: 10px;
-	min-width: 300px;
-	max-width: 1000px;
+/* Flip around the padding for proper display in narrow viewports */
+
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #3E84E8;
 }
 
-.button1:hover {
-    background-color: white; 
-    color: black;
+.navbar-wrapper .navbar .container {
+  width: auto;
 }
 
-.button1:active {
-	background-color: #CAA6F5;
-	color: white;	
-}
-footer {
-	margin-top: 100px;
-	clear: both;
-	bottom: 10%;
-}
-h2{
-	margin-top: 50px;
-	margin-bottom: -1px;
-}
-
-h1{
-	margin-top: 25px;
-	margin-bottom:-1px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-    background-color: #12629B;
+.navbar-inverse .navbar-nav>li>a {
     color: white;
 }
-section {
-	clear: left;
-}
-
-h1 {
-	font-size: 45px;
-	font-weight: 100;
-	letter-spacing: 5px;
-	text-align: center;
-}
 
 
-p {
-	margin: 15px 0;
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
 }
 
-a {
-	color: #06c;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #37FDFF;
 }
-#logo {
-	margin-top: -7px;
-	float: left;
-	z-index: 11;
-	opacity: 1;
-	position: relative;
-	margin-right: 25px;
-	padding-bottom: 30px;
-	border-top: 10px solid #6BAAE2;
-	border-bottom: 25px double #6BAAE2;
-	background-color: #51A5BA;
-	margin-left: -25px;
-	text-shadow: 0 0;
-}
-
-#logo:hover{
-	border-bottom: 25px double #41924B;
-	border-top: 10px solid #41924B;
-}
-
-#logo:active{
-	border-bottom: 25px double #FE8402;
-	border-top: 10px solid #FE8402;
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
 
 
-#contact_details tr:nth-child(odd){
-	background-color: white
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-#contact_details tr:nth-child(odd) > th{ 
-	background-color: #4EABB8
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 767px) {
+	/*Logo */
+	  .big_logo{
+		  display:none !important;
+	  }
+
 }
 
 
 
-.float_right{
-	left: 50%;
-	float: right;
-	padding: 3px;
-	margin: 15px;
-	background-color: #2A5288;
+@media (min-width: 768px) {
+  /*Logo */
+
+  .small_logo{
+	display: none !important;
+  }
+  
+ 
+  
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
 }
 
-.float_left{
-	left: 50%;
-	float: left;
-	padding: 3px;
-	margin-right: 25px;
-	background-color: #2A5288;
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }
 
-#collage{
-	padding: 25px;
-	float: left;
-}
-
-.float_left_text{
-	float: left;
-	padding: 3px;
-	margin-right: 25px;
-
+@media (min-width:768px) and (max-width: 991px){
+	.navbar-inverse .navbar-nav>li>a {
+		font-size:9px;
+	}
 }

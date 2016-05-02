@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+table{
+	width:100%;
+	margin:10px;
+}
+
+
+table{
+	color:black	
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #12629B;
+    color: white;
+}
+
+tr:nth-child(odd){
+	background-color: white
+}
+
+tr:nth-child(odd) > th{ 
+	background-color: #3E53CB
+}

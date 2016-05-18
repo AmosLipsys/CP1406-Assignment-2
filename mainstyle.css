@@ -285,3 +285,21 @@ overflow: hidden;
 .double_column_list ul{
 	list-style-type: none;
 }
+
+.simple_content{
+	background-color: aqua;
+	width: 100%;
+	padding:25px;	
+}
+
+.simple_content img{
+	border:medium solid #161A8D;
+	margin: 10px;
+
+}
+
+#benifactor_list li{
+	list-style-type: none;
+	font-size:24px;
+	margin: 10px
+}

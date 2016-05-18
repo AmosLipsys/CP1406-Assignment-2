@@ -9,11 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="photos/bro-logo2.png">
 
-    <title>Benifactor Form You Details</title>
+    <title>Welcome Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-switch.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -49,8 +48,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img class="big_logo" src="photos/bro-logo2-withcaption.png"  alt="BRO Logo"/></a>
-              <a class="navbar-brand" href="#"><img class="small_logo" src="photos/bro-logo2-small-withcaption.png"  alt="BRO Logo"/></a>
+              <a class="navbar-brand" href="index.html"><img class="big_logo" src="photos/bro-logo2-withcaption.png"  alt="BRO Logo"/></a>
+              <a class="navbar-brand" href="index.html"><img class="small_logo" src="photos/bro-logo2-small-withcaption.png"  alt="BRO Logo"/></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -87,97 +86,3 @@
 
       </div>
     </div>
-
-   <h1 class="title">Benifactor Form - Your Details</h1> 
-     
-<!-- Form -->
-<form class="form-horizontal" role="form">
-<h2 class="center-text">Your Details:<button type="submit" class="btn btn-default back_button pull-left"> <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"> Back </span></button></h2>
-
-
-<div class="progress">
-  <div class="progress-bar progress-bar-striped active" id="progress_bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
-    <span class="sr-only">0% Complete</span>
-  </div>
-</div>
-
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="name">Name:</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="name" placeholder="e.g. Amos Lipsys">
-    </div>
-  </div>
-  
-  
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="alt_name">Name of Benfit Roll:</label>
-    <div class="col-sm-10"> 
-      <input type="alt_name" class="form-control" id="alt_name" placeholder="e.g. Amos 'The Sexiest Man Alive' Lipsys">
-      Remain Anonymous: 
-      <input type="checkbox" id="anonymous_switch" checked name="remain_anonymous" data-on-text="Yes Please" data-off-text="No Thanks" class="BSswitch"> 
-    </div>
-  </div>
-    
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="mailing_address">e.g. Mailing Address:</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="mailing_address" placeholder="42 Wallaby Way, Sydney">
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="phone_number">Phone Number:</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="phone_number" placeholder="e.g. (07) 1234 5678">
-    </div>
-  </div>
-  
-  
-  <div class="form-group"> 
-
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default pull-right">Let's Continue!</button>
-      
-    </div>
-  </div>
-</form>
-
-
-
-      <!-- FOOTER -->
-      <footer> 
-      		
-                  
-        <p class="pull-right"><a href="#">Back to top </a></p>
-        <p><a id="billybutton">&copy;</a> 2016 , Barrier Reef Orchestra. - <a href="contact_us.html">Contact Us! <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a> </p>
-        
-      </footer>
-
-    </div><!-- /.container -->
-	
-    </div>
-    
-    <!-- /.Bill Brown -->
-    <textarea id="ta"></textarea >
-    <audio id="myMusic">
-    <source src="photos/Mikey.mp3" />     
-	</audio>
-    
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="billy.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    <script src="js/bootstrap-switch.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="form.js"></script>
-	<script src="jquery.bcSwipe.js"></script>
-
-  </body>
-</html>

@@ -18,8 +18,7 @@ a[href $= '.pdf'] {
 	margin-left: auto;
 	margin-right: auto;
 	width: 320px;
-	height: auto;
-	padding-bottom: -15px;
+	height: 770px;
 	border-width: 10px;
 	border-style: solid;
 	border-color: #3E84E8;
@@ -38,7 +37,6 @@ a[href $= '.pdf'] {
 
 	.big_logo{
 	margin-top: -20px;
-	padding-bottom:-15px;
 	border-top: thick solid #C325F5;
 	border-right:medium solid #C325F5;
 	border-left:medium solid #C325F5;
@@ -144,14 +142,6 @@ a[href $= '.pdf'] {
 }
 
 
-/* Footer
-------------------------- */
-
-footer{
-	margin-top:25px;
-}
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 767px) {
@@ -186,6 +176,11 @@ footer{
     padding-left: 0;
   }
 
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
@@ -193,30 +188,11 @@ footer{
     line-height: 1.4;
   }
 
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
   .featurette-heading {
     font-size: 50px;
   }
 }
 
-.carousel img{
-object-fit: cover;
-overflow: hidden;
-    }
-	
-.title{
-	text-align:center;
-	margin-top: 110px;
-	margin-bottom:65px;
-	width:50%;
-	margin-right:auto;
-	margin-left:auto;
-	font-size:50px;
-}
 
 @media (min-width: 992px) {
   .featurette-heading {
@@ -224,64 +200,8 @@ overflow: hidden;
   }
 }
 
-@media (min-width:768px) and (max-width: 991px){
+@media (max-width: 991px){
 	.navbar-inverse .navbar-nav>li>a {
 		font-size:9px;
 	}
-}
-
-#billybutton:hover{
-	text-decoration: none;
-}
-
-.form-horizontal{
-	background-color:#37FDFF;
-	padding: 25px;
-}
-
-.center-text{
-	text-align:center;
-}
-
-.progress{
-	width:50%;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-#ta{
-	display:none;
-	width: 100%;
-	height: 200px;
-}
-
-.btn{
-	color:#262626;
-	background-color:#1877AC;
-	margin-bottom:10px;
-	margin-top: 10px;
-}
-
-#events{
-	background-color: aqua;
-	width: 100%	
-}
-
-.event {
-	margin-bottom: 75px;
-	margin-left: 25 px;
-}
-
-.event img{
-	border:medium solid #161A8D;
-	margin: 10px;
-}
-
-.double_column_list li {
-	float: left;
-	 width: 50%;
-}
-
-.double_column_list ul{
-	list-style-type: none;
 }

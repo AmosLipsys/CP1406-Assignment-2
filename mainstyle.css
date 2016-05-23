@@ -311,8 +311,16 @@ overflow: hidden;
 .simple_content img{
 	border:medium solid #161A8D;
 	margin: 10px;
+}
+
+.gallery_content{
+	background-color: aqua;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 }
+
 
 #benifactor_list li{
 	list-style-type: none;
@@ -407,4 +415,38 @@ table a{
 
 .button_group a{
 	background-color: #499DF5;
+}
+
+.clear			{ 
+	clear:both; 
+}
+
+.photo-link		{ 
+	padding:5px;
+	margin:5px; 
+	border:1px solid #ccc;
+	display:block;
+	width:215px;
+	height: 150px; 
+	float:left;
+	overflow:hidden;
+}
+
+.photo-link:hover{
+	 border-color:#999; 
+}
+
+.gallery_images
+{
+    margin:1px;
+    width:20%;
+    text-align:left;
+    border: 1px solid gray;
+    display:inline-block;    
+}
+.gallery_container
+{
+    text-align:center;
+    width:100%;
+    border: 1px solid black;
 }

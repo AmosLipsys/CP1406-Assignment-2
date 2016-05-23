@@ -146,6 +146,22 @@ a[href $= '.pdf'] {
 
 /* Footer
 ------------------------- */
+.footerbuttons div{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.footerbuttons a{
+	background-color:#00688B;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin: 0px;
+	font-size:16px;
+	font-weight:500;
+	border-radius:0px;
+	border-width: 5px;
+}
+
 
 footer{
 	margin-top:25px;
@@ -239,7 +255,7 @@ overflow: hidden;
 	padding: 25px;
 }
 
-.center-text{
+.sub-heading{
 	text-align:center;
 }
 
@@ -304,3 +320,91 @@ overflow: hidden;
 	margin: 10px
 }
 
+.img-center{
+	width: 400px !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
+.contact_details{
+	text-align:center;
+	font-size:24px;
+}
+.contact_details h1{
+	margin: 25px;
+	font-size:35px;
+	font-weight:700;
+}
+
+
+/* Buttons for Our Legacy Page */
+.content_selector{
+	width: 100%;
+	margin:0px;
+	padding:0px;
+}
+
+.content_selector div{
+	margin:0px;
+	padding:0px;
+}
+
+.content_selector a{
+	margin: 0px;
+
+}
+
+.content_selector .btn{
+	border-radius:0;
+}
+
+
+/* Table Design */
+
+table{
+	width:100%;
+	margin:10px;
+}
+
+
+table{
+	color:black	
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #12629B;
+    color: white;
+}
+
+tr:nth-child(odd){
+	background-color: white
+}
+
+tr:nth-child(odd) > th{ 
+	background-color: #3E53CB
+}
+
+table a{
+	color:purple;
+	text-decoration:underline;
+	
+}
+
+.down_arrow{
+	background-color: #499DF5;
+}
+.down_arrow span{
+	font-size: 24px;
+	margin-left: 24%;
+}
+
+.button_group a{
+	background-color: #499DF5;
+}

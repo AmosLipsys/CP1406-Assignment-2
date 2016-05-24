@@ -35,7 +35,7 @@
                 <nav class="navbar navbar-inverse navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <button  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -67,7 +67,7 @@
                                         <li><a href="staff_room.html">Staff Room</a></li>
                                         
                                         <li><a href="pdf/nqei-rules-2010.pdf">Rules and Regulations</a></li>
-                                        <li><a href="pdf/BRO Repertoire.pdf">Report </a></li>
+                                        <li><a href="pdf/BRO_Repertoire.pdf">Report </a></li>
                                     </ul>
                                 </li>
 

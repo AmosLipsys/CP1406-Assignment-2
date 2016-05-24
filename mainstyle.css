@@ -17,13 +17,20 @@ a[href $= '.pdf'] {
 .facebookfeed{
 	margin-left: auto;
 	margin-right: auto;
-	width: 320px;
-	height: auto;
+	max-width:520px;
 	padding-bottom: -15px;
 	border-width: 10px;
 	border-style: solid;
 	border-color: #3E84E8;
 	}
+
+.facebook_feed{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

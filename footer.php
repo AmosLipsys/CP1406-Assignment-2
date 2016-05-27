@@ -8,7 +8,7 @@
             
                   
         <p class="pull-right"><a href="#">Back to top </a></p>
-        <p><a id="billybutton">&copy;</a> 2016 , Barrier Reef Orchestra. - <a href="contact_us.html">Contact Us! <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a> </p>
+        <p><a id="easter_egg_button">&copy;</a> 2016 , Barrier Reef Orchestra. - <a href="contact_us.html">Contact Us! <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a> </p>
         
       </footer>
 
@@ -16,10 +16,10 @@
 	
     </div>
     </div>
-    <!-- /.Bill Brown -->
+    <!-- /.Easter Egg -->
     <textarea id="ta"></textarea >
     <audio id="myMusic">
-    <source src="photos/Mikey.mp3" />     
+    <source src="photos/Kevin_MacLeod.mp3" />     
 	</audio>
     
     
@@ -27,7 +27,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="billy.js"></script>
+    <script src="easter_egg.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -36,6 +36,6 @@
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="jquery.bcSwipe.js"></script>
+    
   </body>
 </html>

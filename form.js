@@ -1,10 +1,9 @@
 // JavaScript Document
 
-// Make checkbox into switch
-$("[type='checkbox']").bootstrapSwitch();
  
 // Change Progress Bar
 function pro_bar(percent){
+	"use strict";
 	document.getElementById("progress_bar").style.width = percent + "%";
 	if (percent === 100){
 		document.getElementById("submit").style.backgroundColor = "#4CAF50";
@@ -31,17 +30,19 @@ var has_amount = 0;
 var has_payment = 0;
 
 // Set Progress Bar
-var progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+var progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 
 
 // Name
 input_name.addEventListener("focus", function() {
+	"use strict";
 	document.getElementById("name").style.borderColor = "#ffffff";
 	});
 	
 
 input_name.addEventListener("blur", function() {
-	if (input_name.value != ""){
+	"use strict";
+	if (input_name.value !== ""){
 		has_name = 1;
 		document.getElementById("name").style.backgroundColor = "#ffffff";
 		}
@@ -50,7 +51,7 @@ input_name.addEventListener("blur", function() {
 		document.getElementById("name").style.backgroundColor = "#ff0000";
 		}
 		
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);	
 });
 
@@ -59,12 +60,14 @@ input_name.addEventListener("blur", function() {
 		
 // Alt Name
 input_alt_name.addEventListener("focus", function() {
+	"use strict";
 	document.getElementById("alt_name").style.backgroundColor = "#ffffff";
 	});
 	
 
 input_alt_name.addEventListener("blur", function() {
-	if (input_alt_name.value != ""){
+	"use strict";
+	if (input_alt_name.value !== ""){
 		has_alt_name = 1;
 		document.getElementById("alt_name").style.backgroundColor = "#ffffff";
 		}
@@ -72,14 +75,15 @@ input_alt_name.addEventListener("blur", function() {
 		has_alt_name = 0;
 		document.getElementById("alt_name").style.backgroundColor = "#ff0000";
 		}
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);	
 });
 
-// Switch
+
 
 $('.BSswitch').bootstrapSwitch('state', false);
 $('#anonymous_switch').on('switchChange.bootstrapSwitch', function () {
+	"use strict";
 	if ($('#anonymous_switch').bootstrapSwitch('state')){
 		document.getElementById("alt_name").disabled = true;
 		has_alt_name = 1;
@@ -87,8 +91,7 @@ $('#anonymous_switch').on('switchChange.bootstrapSwitch', function () {
 	}
 	else{
 		document.getElementById("alt_name").disabled = false;
-		
-		if (input_alt_name.value != ""){
+		if (input_alt_name.value !== ""){
 			has_alt_name = 1;
 			document.getElementById("alt_name").style.backgroundColor = "#ffffff";
 		}
@@ -97,19 +100,21 @@ $('#anonymous_switch').on('switchChange.bootstrapSwitch', function () {
 			document.getElementById("alt_name").style.backgroundColor = "#ff0000";
 		}
 	}
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);
 });
 
 
 // Mailing Address
 input_mailing_address.addEventListener("focus", function() {
+	"use strict";
 	document.getElementById("mailing_address").style.backgroundColor = "#ffffff";
 	});
 	
 
 input_mailing_address.addEventListener("blur", function() {
-	if (input_mailing_address.value != ""){
+	"use strict";
+	if (input_mailing_address.value !== ""){
 		has_address = 1;
 		document.getElementById("mailing_address").style.backgroundColor = "#ffffff";
 		}
@@ -117,18 +122,20 @@ input_mailing_address.addEventListener("blur", function() {
 		has_address = 0;
 		document.getElementById("mailing_address").style.backgroundColor = "#ff0000";
 		}
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);	
 });
 
 // Phone Number
 input_phone_number.addEventListener("focus", function() {
+	"use strict";
 	document.getElementById("phone_number").style.backgroundColor = "#ffffff";
 	});
 	
 
 input_phone_number.addEventListener("blur", function() {
-	if (input_phone_number.value != ""){
+	"use strict";
+	if (input_phone_number.value.length >= 6){
 		has_phone_number = 1;
 		document.getElementById("phone_number").style.backgroundColor = "#ffffff";
 		}
@@ -136,7 +143,7 @@ input_phone_number.addEventListener("blur", function() {
 		has_phone_number = 0;
 		document.getElementById("phone_number").style.backgroundColor = "#ff0000";
 		}
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);	
 });
 
@@ -144,12 +151,14 @@ input_phone_number.addEventListener("blur", function() {
 
 
 input_amount.addEventListener("focus", function() {
+	"use strict";
 	document.getElementById("amount").style.backgroundColor = "#ffffff";
 	});
 	
 
 input_amount.addEventListener("blur", function() {
-	if (input_amount.value != ""){
+	"use strict";
+	if (input_amount.value !== ""){
 		has_amount = 1;
 		document.getElementById("amount").style.backgroundColor = "#ffffff";
 		}
@@ -157,18 +166,20 @@ input_amount.addEventListener("blur", function() {
 		has_amount = 0;
 		document.getElementById("amount").style.backgroundColor = "#ff0000";
 		}
-	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 20 ;
+	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);	
 });
 
 $('input:radio').on('click', function(){
+	"use strict";
 	has_payment = 1;
 	progress = 1 + 24 * has_name + 15 * has_alt_name + 15 * has_address + 15 * has_phone_number + 15 * has_amount + has_payment * 15 ;
 	pro_bar(progress);
 });
 
 input_submit.addEventListener("click", function() {
-	if (progress == 100){	
+	"use strict";
+	if (progress === 100){	
 	window.location.href = "bene_form_finished.html";
 	}
 	else{
@@ -178,7 +189,7 @@ input_submit.addEventListener("click", function() {
 			input_name.focus();
 		}
 		if (! has_alt_name){
-			fail_string = fail_string + "\nInclude an alternate name or press the switch to remain anonymous";
+			fail_string = fail_string + "\nInclude an alternate name or type &quotanonymous&quot to remain anonymous";
 			input_alt_name.focus();
 		}
 		if (! has_address){
@@ -205,5 +216,6 @@ input_submit.addEventListener("click", function() {
 	});
 
 input_back.addEventListener("click", function(){
+	"use strict";
 	window.location.href = "become_a_patron.html";
 });
